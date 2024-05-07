@@ -25,29 +25,29 @@ var actionMap = map[string]func(param, userId string) string{
 	config.Wx_Command_Gpt: func(param, userId string) string {
 		return SwitchUserBot(userId, config.Bot_Type_Gpt)
 	},
-	config.Wx_Command_Spark: func(param, userId string) string {
-		return SwitchUserBot(userId, config.Bot_Type_Spark)
-	},
-	config.Wx_Command_Qwen: func(param, userId string) string {
-		return SwitchUserBot(userId, config.Bot_Type_Qwen)
-	},
-	config.Wx_Command_Gemini: func(param, userId string) string {
-		return SwitchUserBot(userId, config.Bot_Type_Gemini)
-	},
+	// config.Wx_Command_Spark: func(param, userId string) string {
+	// 	return SwitchUserBot(userId, config.Bot_Type_Spark)
+	// },
+	// config.Wx_Command_Qwen: func(param, userId string) string {
+	// 	return SwitchUserBot(userId, config.Bot_Type_Qwen)
+	// },
+	// config.Wx_Command_Gemini: func(param, userId string) string {
+	// 	return SwitchUserBot(userId, config.Bot_Type_Gemini)
+	// },
 
-	config.Wx_Command_Prompt:    SetPrompt,
-	config.Wx_Command_RmPrompt:  RmPrompt,
-	config.Wx_Command_GetPrompt: GetPrompt,
+	// config.Wx_Command_Prompt:    SetPrompt,
+	// config.Wx_Command_RmPrompt:  RmPrompt,
+	// config.Wx_Command_GetPrompt: GetPrompt,
 
-	config.Wx_Command_SetModel: SetModel,
-	config.Wx_Command_GetModel: GetModel,
+	// config.Wx_Command_SetModel: SetModel,
+	// config.Wx_Command_GetModel: GetModel,
 	config.Wx_Command_Clear:    ClearMsg,
 
-	config.Wx_Todo_List: GetTodoList,
-	config.Wx_Todo_Add:  AddTodo,
-	config.Wx_Todo_Del:  DelTodo,
+	// config.Wx_Todo_List: GetTodoList,
+	// config.Wx_Todo_Add:  AddTodo,
+	// config.Wx_Todo_Del:  DelTodo,
 
-	config.Wx_Coin: GetCoin,
+	// config.Wx_Coin: GetCoin,
 }
 
 func DoAction(userId, msg string) (r string, flag bool) {
